@@ -7,8 +7,8 @@
     <ProjectGuid>{F549014C-BC5B-41F0-95A7-7F095397B6E7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LeaveRegistration</RootNamespace>
-    <AssemblyName>LeaveRegistration</AssemblyName>
+    <RootNamespace>K12.Behavior.Leave.Request</RootNamespace>
+    <AssemblyName>K12.Behavior.Leave.Request</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
