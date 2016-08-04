@@ -9,7 +9,7 @@ using System.Text;
 
 namespace K12.Behavior.Leave.Request
 {
-    [TableName("huiwen.leave")]
+    [TableName("ischool.leave")]
     class LeaveRequestRecord : FISCA.UDT.ActiveRecord
     {
         [Field(Field = "approved")]
