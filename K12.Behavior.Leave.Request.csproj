@@ -102,12 +102,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LeaveRequestDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaveRequestDetail.Designer.cs">
+      <DependentUpon>LeaveRequestDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="LeaveRequestRecord.cs" />
     <Compile Include="LeaveRequestViewer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LeaveRequestViewer.Designer.cs">
       <DependentUpon>LeaveRequestViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeLeaveRequestDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeLeaveRequestDetail.Designer.cs">
+      <DependentUpon>OfficeLeaveRequestDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeLeaveRequestViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeLeaveRequestViewer.Designer.cs">
+      <DependentUpon>OfficeLeaveRequestViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -161,8 +179,17 @@
     <EmbeddedResource Include="LeaveRequestApprove.resx">
       <DependentUpon>LeaveRequestApprove.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LeaveRequestDetail.resx">
+      <DependentUpon>LeaveRequestDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LeaveRequestViewer.resx">
       <DependentUpon>LeaveRequestViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeLeaveRequestDetail.resx">
+      <DependentUpon>OfficeLeaveRequestDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeLeaveRequestViewer.resx">
+      <DependentUpon>OfficeLeaveRequestViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

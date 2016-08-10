@@ -30,7 +30,8 @@ namespace K12.Behavior.Leave.Request
                 var btn = FISCA.Presentation.MotherForm.RibbonBarItems["學務作業", "線上請假"]["公假假單查詢"];
                 btn.Click += delegate
                 {
-                    new LeaveRequestViewer().ShowDialog();
+                    new OfficeLeaveRequestViewer().ShowDialog();
+                    
                 };
             }
         }
