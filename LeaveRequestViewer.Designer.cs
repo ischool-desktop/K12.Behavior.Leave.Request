@@ -333,6 +333,7 @@
             this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.dgvResult);
             this.DoubleBuffered = true;
+            this.ImeMode = System.Windows.Forms.ImeMode.Hangul;
             this.MaximizeBox = true;
             this.Name = "LeaveRequestViewer";
             this.Text = "學生假單查詢";

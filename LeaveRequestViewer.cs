@@ -78,7 +78,7 @@ namespace K12.Behavior.Leave.Request
             long endDay = (dateTimeInput2.Value.AddDays(1).Ticks - 621355968000000000 - 288000000000) / 10000;
 
             // 2016/8/8 父親節，穎驊改寫，選擇條件改為 ref_student_id 等於指定id 如此一來才不會選到公假單(公假單的ref_student_id 等於null)
-            var list = accessHelper.Select<LeaveRequestRecord>((textBoxX1.Text == "" ? "ref_student_id >=0" : "ref_student_id <=" + StuNum_To_StuID[textBoxX1.Text]) + " AND uqid >=" + "'" + startDay + "'" + " AND uqid < " + "'" + endDay + "'");
+            var list = accessHelper.Select<LeaveRequestRecord>((textBoxX1.Text == "" ? "ref_student_id >=0" : "ref_student_id =" + StuNum_To_StuID[textBoxX1.Text]) + " AND uqid >=" + "'" + startDay + "'" + " AND uqid < " + "'" + endDay + "'");
 
             //選擇所有一般假單，一般假單由學生填寫，不會有ref_teacher_id 
             //var list = accessHelper.Select<LeaveRequestRecord>("ref_student_id > 0");

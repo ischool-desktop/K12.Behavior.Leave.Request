@@ -262,6 +262,7 @@
             this.Controls.Add(this.buttonX1);
             this.Controls.Add(this.dgvResult);
             this.DoubleBuffered = true;
+            this.ImeMode = System.Windows.Forms.ImeMode.Hangul;
             this.Name = "OfficeLeaveRequestViewer";
             this.Text = "公假單查詢";
             this.Load += new System.EventHandler(this.OfficeLeaveRequestViewer_Load);
