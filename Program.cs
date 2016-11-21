@@ -49,17 +49,14 @@ namespace K12.Behavior.Leave.Request
             }
             {
                 Catalog detail1 = RoleAclSource.Instance["學務作業"]["線上請假"];
-                detail1.Add(new RibbonFeature("線上請假設定", "線上請假設定"));
+                detail1.Add(new RibbonFeature("69ED30B9-BFE5-4FE9-B3D3-7AD0976AECDD", "線上請假設定"));
 
                 var btn = FISCA.Presentation.MotherForm.RibbonBarItems["學務作業", "基本設定"]["設定"]["線上請假設定"];
-                btn.Enable = FISCA.Permission.UserAcl.Current["線上請假設定"].Executable;
+                btn.Enable = FISCA.Permission.UserAcl.Current["69ED30B9-BFE5-4FE9-B3D3-7AD0976AECDD"].Executable;
                 btn.Click += delegate
                 {
-
                     new LeaveConfigSetting().ShowDialog();
-
                 };
-                                    
             }
         }
     }
